@@ -4,9 +4,9 @@
 int main() {
 	srand(time(0));
 
-	int n;
+	int n, m;
 	cout << "Enter size of the square matrix: ";
-	cin >> n;
+	cin >> n >> m;
 
 	int** matrix = new int* [n];
 	for (int i = 0; i < n; i++) {
@@ -16,12 +16,12 @@ int main() {
 	int a, b;
 	cout << "Enter range of matrix values: ";
 	cin >> a >> b;
-	init(matrix, n, a, b);
+	init(matrix, n, m, a, b);
 
-	cout << convert_to_string(matrix, n);
+	cout << convert_to_string(matrix, n, m);
 
-	cout << "Sum from both diagonals of matrix: "
-		<< get_sum_from_both_diagonals(matrix, n) << endl;
+	cout << "Amount of lines where positive elements are more: "
+		<<  << endl;
 
 	for (int i = 0; i < n; i++) {
 		delete[] matrix[i];
