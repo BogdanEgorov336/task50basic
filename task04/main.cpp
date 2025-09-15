@@ -21,7 +21,7 @@ int main() {
 	cout << convert_to_string(matrix, n, m);
 
 	cout << "Amount of lines where positive elements are more: "
-		<<  << endl;
+		<< get_sum_from_columns_with_extreme_elements(matrix, n, m) << endl;
 
 	for (int i = 0; i < n; i++) {
 		delete[] matrix[i];

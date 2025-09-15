@@ -6,6 +6,10 @@ void init(int** matrix, int n, int m, int a, int b) {
 		swap(a, b);
 	}
 
+	if (n > m) {
+		swap(m, n);
+	}
+
 	for (int i = 0; i < n; i++) {
 
 		for (int j = 0; j < m; j++) {
